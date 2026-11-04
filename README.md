@@ -119,9 +119,6 @@ ws.add_chart(chart2, "F18")
 
 wb.save("Bayelsa_KPI_Report_With_Charts.xlsx")
 
-<img width="1366" height="681" alt="Bayelsa KPI Report With Chart" src="https://github.com/user-attachments/assets/358bf876-a66f-4e6d-ac14-4922c7ccaf98" />
-
-
 STEP 8: Plotly Interactive Dashboard
 
 fig = make_subplots(rows=3, cols=3, subplot_titles=("Avg Units", "Avg Cost", "Avg Quality Issues", "Avg Hours Worked", "Avg Training Hours", "", "Training Hours vs Units", "Hours Worked vs Units"))
@@ -131,21 +128,12 @@ fig.add_trace(go.Bar(y=avg_units.index, x=avg_units.values, orientation="h"), ro
 <img width="450" height="217" alt="AvgUnits" src="https://github.com/user-attachments/assets/63e9680a-9030-464e-a472-dedccc5a8df0" />
 
 fig.add_trace(go.Bar(y=avg_cost.index, x=avg_cost.values, orientation="h"), row=1, col=2)
-
-<img width="440" height="226" alt="AvgCost" src="https://github.com/user-attachments/assets/6d346d2f-e21e-42a2-ad8d-0518ff23e5ee" />
-
 fig.add_trace(go.Bar(y=avg_quality.index, x=avg_quality.values, orientation="h"), row=1, col=3)
-
-<img width="439" height="221" alt="AvgQualityIssues" src="https://github.com/user-attachments/assets/10cb6982-027d-48cc-81dd-1394c8522571" />
-
 fig.add_trace(go.Bar(y=avg_hours.index, x=avg_hours.values, orientation="h"), row=2, col=1)
 fig.add_trace(go.Bar(y=avg_training.index, x=avg_training.values, orientation="h"), row=2, col=2)
 
-<img width="469" height="234" alt="AvgTrainingHours" src="https://github.com/user-attachments/assets/9627047f-ae81-4169-bc62-f40c2131e047" />
-
 fig.add_trace(go.Scatter(x=avg_units_by_training["Training Hours"], y=avg_units_by_training["Units Produced"], mode="lines+markers"), row=3, col=1)
 fig.add_trace(go.Scatter(x=avg_units_by_hours["Hours Worked"], y=avg_units_by_hours["Units Produced"], mode="lines+markers"), row=3, col=2)
-
 fig.update_layout(title_text="Oil Rig Production Dashboard - Bayelsa", height=900, width=1400, template="plotly_white", showlegend=False)
 fig.show()
 fig.write_html("dashboard.html")
@@ -159,7 +147,7 @@ After running python art.py:
 4. *Bayelsa_KPI_Report_With_Charts.xlsx:* Executive report with embedded BarCharts.
 5. *dashboard.html:* Interactive Plotly dashboard - 8 charts showing Avg Units, Cost, Quality, Hours, Training, and trend lines for Training vs Production.
 
-Key Insights (Example)
+Key Insights
 - Rigs failing UPH < 11 need productivity review
 - Rigs failing CPU > 750 need cost optimization
 - Rigs failing UPI < 250 need quality control intervention
