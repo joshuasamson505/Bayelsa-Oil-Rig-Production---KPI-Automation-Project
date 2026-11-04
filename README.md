@@ -124,9 +124,6 @@ STEP 8: Plotly Interactive Dashboard
 fig = make_subplots(rows=3, cols=3, subplot_titles=("Avg Units", "Avg Cost", "Avg Quality Issues", "Avg Hours Worked", "Avg Training Hours", "", "Training Hours vs Units", "Hours Worked vs Units"))
 
 fig.add_trace(go.Bar(y=avg_units.index, x=avg_units.values, orientation="h"), row=1, col=1)
-
-<img width="450" height="217" alt="AvgUnits" src="https://github.com/user-attachments/assets/63e9680a-9030-464e-a472-dedccc5a8df0" />
-
 fig.add_trace(go.Bar(y=avg_cost.index, x=avg_cost.values, orientation="h"), row=1, col=2)
 fig.add_trace(go.Bar(y=avg_quality.index, x=avg_quality.values, orientation="h"), row=1, col=3)
 fig.add_trace(go.Bar(y=avg_hours.index, x=avg_hours.values, orientation="h"), row=2, col=1)
@@ -152,6 +149,3 @@ Key Insights
 - Rigs failing CPU > 750 need cost optimization
 - Rigs failing UPI < 250 need quality control intervention
 - Correlation analysis shows impact of Training Hours on UPH/CPU/UPI
-
-Future Improvement
-Add target lines on Plotly charts, automate weekly email reports, add conditional formatting in openpyxl.
