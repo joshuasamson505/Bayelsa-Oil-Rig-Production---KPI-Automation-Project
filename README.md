@@ -149,3 +149,33 @@ Key Insights
 - Rigs failing CPU > 750 need cost optimization
 - Rigs failing UPI < 250 need quality control intervention
 - Correlation analysis shows impact of Training Hours on UPH/CPU/UPI
+
+### Recommendations & Action Plan
+
+#### OBJECTIVE 1: Improve Productivity (UPH Target = 11)
+Finding: Rigs with avg UPH < 11 are under-performing.
+Recommendations:
+1.  Audit Hours Worked: Rigs failing UPH may have high Hours Worked but low Units Produced. Check for idle time, equipment downtime.
+2.  Shift Restructuring: Replicate the shift pattern of the PASS rigs (highest UPH) to FAIL rigs.
+3.  Investigate Rigs in FAIL list - provide performance coaching for 2 weeks.
+
+#### OBJECTIVE 2: Reduce Cost Per Unit (CPU Target = 750 ₦)
+Finding: Rigs with avg CPU > 750 are spending too much to produce one unit.
+Recommendations:
+1.  Cost Driver Analysis: Break down Production Cost - fuel, maintenance, logistics. The rig with highest CPU likely has high maintenance cost.
+2.  Vendor Negotiation: Standardize procurement for all 4 locations based on the lowest CPU rig.
+3.  Implement weekly maintenance to avoid costly emergency repairs that inflate CPU.
+
+#### OBJECTIVE 3: Enhance Quality Control (UPI Target = 250)
+Finding: Lower UPI = More Quality Issues. Rigs with UPI < 250 have quality failures.
+Formula Note: UPI = Units Produced / Quality Issues (0 replaced with 1)
+Recommendations:
+1.  Root Cause Analysis: For FAIL rigs, check if Quality Issues spike on specific days / crews.
+2.  Implement QC Checklist: Make Quality Issues log mandatory before closing production batch.
+3.  Give quality bonus to rigs maintaining UPI > 250 consistently.
+
+#### OBJECTIVE 4: Training Effectiveness (Target = 1 hr/week)
+Finding: From Correlation Analysis: Training Hours positively correlates with UPH & UPI, and negatively with CPU.
+Recommendations:
+1.  Enforce Minimum Training: Rigs in FAIL (<1 hr) must complete mandatory 1.5 hrs/week for next month.
+
